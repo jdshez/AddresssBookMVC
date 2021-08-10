@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AddresssBookMVC.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,8 @@ namespace AddresssBookMVC.Data
         {
 
         }
+
+        public DbSet<Contact> Contacts { get; set; }
+
     }
 }
